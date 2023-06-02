@@ -3,7 +3,7 @@ import { styles } from "./asset.js";
 let Fake,
   i = 0,
   my_username = "";
-  const socket = io();
+  const socket = io(`http://localhost:3000`);
   
 class MessageWidget {
   constructor(position = "bottom-right") { 

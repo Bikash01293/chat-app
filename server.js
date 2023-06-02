@@ -6,8 +6,6 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const fs = require('fs');
 
-app.use('/public', express.static('public'))
-
 app.get('/', (req, res) =>  {
   res.sendFile(__dirname + '/'); 
 });
@@ -69,5 +67,5 @@ io.on('connection',  socket => {
 
 });
 
-http.listen(5173, () => console.log('listening on :5173'));
+http.listen(3000, () => console.log('listening on :5173'));
     
